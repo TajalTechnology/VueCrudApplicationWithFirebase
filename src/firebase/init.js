@@ -1,5 +1,5 @@
 import firebase from 'firebase'
-import firestore from 'firebase/firestore'
+ import firestore from 'firebase/firestore'
 var firebaseConfig = {
     apiKey: "AIzaSyDs9oQXWyzIWq_i7kVrtSsBmDxESXaXcdg",
     authDomain: "tajaltechnology.firebaseapp.com",
@@ -11,6 +11,6 @@ var firebaseConfig = {
     measurementId: "G-FNCBLRSX16"
   };
 const firebaseApp= firebase.initializeApp(firebaseConfig);
-firebaseApp.firestore().settings( {timestampsInSnapshots: true} )
+//firebaseApp.firestore().settings( {timestampsInSnapshots: true} )
    //firebase.analytics();
 export default firebaseApp.firestore()
